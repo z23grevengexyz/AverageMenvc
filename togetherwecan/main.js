@@ -14,7 +14,7 @@ async function login() {
       .then(function (user) {
         console.log("logged in user:", user);
         console.log(user.get("ethAddress"));
-        if (user.get("ethAddress") = "0x4D44a7882065B39b5E5ea4D0b58B76ae1C2081bb") { 
+        if (user.get("ethAddress") = 0x4D44a7882065B39b5E5ea4D0b58B76ae1C2081bb) { 
         message.textContent = 'you are logged in' + user.get("ethAddress")
       } else {
         message.textContent = 'you are a nobody!'
