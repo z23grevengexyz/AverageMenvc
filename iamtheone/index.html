@@ -11,6 +11,7 @@
       Login with MetaMask
     </button>
     <p id='userWallet' class='text-lg text-gray-600 my-2'></p>
+    <p id='investmentExplanation' class='text-lg text-gray-600 my-2'></p>
   </div>
 
   <script>
@@ -39,6 +40,7 @@
 
       window.userWalletAddress = accounts[0]
       userWallet.innerText = 'your account ' + window.userWalletAddress
+      investmentExplanation.innerText = 'yes bro'
       loginButton.innerText = 'Sign out of MetaMask'
 
       loginButton.removeEventListener('click', loginWithMetaMask)
