@@ -7,7 +7,7 @@ Moralis.start({ serverUrl, appId });
 async function login() {
     let user = Moralis.User.current();
     if (!user) {
-      user = await Moralis.authenticate({ signingMessage: "Log in using Moralis" })
+      user = await Moralis.authenticate({ signingMessage: "Sign this message - by Moralis" })
         .then(function (user) {
           console.log("logged in user:", user);
           console.log(user.get("ethAddress"));
