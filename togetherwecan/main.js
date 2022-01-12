@@ -13,7 +13,7 @@ async function login() {
     user = await Moralis.enableWeb3({chainId: 56})
       .then(function (user) {
         console.log("logged in user:", user);
-        //console.log(user.get("ethAddress"));
+        console.log(user.get("ethAddress"));
         message.textContent = 'you are logged in';
       })
       .catch(function (error) {
