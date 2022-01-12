@@ -1,6 +1,8 @@
 /* Moralis init code */
 const serverUrl = "https://bzickdhawq4z.usemoralis.com:2053/server";
 const appId = "qITe7GuLdt3ciuexNB8FW94lY3I08GlzPJeE8Hyk";
+
+const message = document.querySelector('.message');
 Moralis.start({ serverUrl, appId });
 
 /* Authentication code */
@@ -11,7 +13,7 @@ async function login() {
       .then(function (user) {
         console.log("logged in user:", user);
         console.log(user.get("ethAddress"));
-        return "Hello!";
+        message.textContent = 'You need to enter a number, bro!';
       })
       .catch(function (error) {
         console.log(error);
