@@ -41,11 +41,11 @@
       window.userWalletAddress = accounts[0]
       userWallet.innerText = window.userWalletAddress
       console.log(typeof window.userWalletAddress);
-      if (window.userWalletAddress.equals("0x4d44a7882065b39b5e5ea4d0b58b76ae1c2081bb")) {
+      if (window.userWalletAddress === "0x4d44a7882065b39b5e5ea4d0b58b76ae1c2081bb") {
         investmentExplanation.innerText = 'yes bro';  
         console.log("edge metamask"); 
       }
-      else if (window.userWalletAddress.equals("0x27196e33456752aca8e242e3a359c8fcd3e8b7ed")) {
+      else if (window.userWalletAddress === "0x27196e33456752aca8e242e3a359c8fcd3e8b7ed") {
           investmentExplanation.innerText = 'asu cok';
           console.log("brave browser mm");
       }
