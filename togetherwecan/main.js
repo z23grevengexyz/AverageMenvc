@@ -9,8 +9,8 @@ Moralis.start({ serverUrl, appId });
 async function login() {
   let user = Moralis.User.current();
   if (!user) {
-    //user = await Moralis.authenticate({ signingMessage: "Welcome to AverageMen" })
-    user = await Moralis.enableWeb3({chainId: 56})
+    user = await Moralis.authenticate({ signingMessage: "Welcome to AverageMen" })
+    //user = await Moralis.enableWeb3({chainId: 56})
       .then(function (user) {
         console.log("logged in user:", user);
         console.log(user.get("ethAddress"));
