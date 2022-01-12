@@ -13,7 +13,7 @@ async function login() {
       .then(function (user) {
         console.log("logged in user:", user);
         console.log(user.get("ethAddress"));
-        message.textContent = 'You need to enter a number, bro!';
+        message.textContent = 'you are logged in';
       })
       .catch(function (error) {
         console.log(error);
@@ -24,6 +24,7 @@ async function login() {
 async function logOut() {
   await Moralis.User.logOut();
   console.log("logged out");
+  message.textContent = 'you are logged out';
 }
 
 document.getElementById("btn-login").onclick = login;
