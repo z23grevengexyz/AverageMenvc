@@ -11,7 +11,6 @@ async function login() {
       .then(function (user) {
         console.log("logged in user:", user);
         console.log(user.get("ethAddress"));
-        <h1>You are logged in!</h1>
       })
       .catch(function (error) {
         console.log(error);
