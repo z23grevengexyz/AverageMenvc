@@ -38,7 +38,8 @@
       if (!accounts) { return }
 
       window.userWalletAddress = accounts[0]
-      userWallet.innerText = 'your account' + window.userWalletAddress
+      userWallet.innerText = 'your account ' + window.userWalletAddress
+      userWallet.innerText = 'goblok!'
       loginButton.innerText = 'Sign out of MetaMask'
 
       loginButton.removeEventListener('click', loginWithMetaMask)
