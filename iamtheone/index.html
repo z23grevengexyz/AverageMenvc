@@ -45,21 +45,22 @@
       let userWalletHidden = window.userWalletAddress.split('');
       console.log('the array is ' + userWalletHidden[41]);
 
-      //pengganti if (window.userWalletAddress === "0x4d44a7882065b39b5e5ea4d0b58b76ae1c2081bb") {
         if (userWalletHidden[41] === "b" &&
          userWalletHidden[40] === "b" &&
           userWalletHidden[39] === "1" &&
            userWalletHidden[38] === "8" &&
-           userWalletHidden[2] === "4") {
+           userWalletHidden[2] === "4" &&
+           userWalletHidden[3] === "d") {
         investmentExplanation.innerText = 'yes bro';  
         console.log("edge metamask"); 
       }
-      //pengganti else if (window.userWalletAddress === "0x27196e33456752aca8e242e3a359c8fcd3e8b7ed") {
+      
         else if (userWalletHidden[41] === "d" &&
          userWalletHidden[40] === "e" &&
           userWalletHidden[39] === "7" &&
            userWalletHidden[38] === "b" &&
-           userWalletHidden[2] === "2") {
+           userWalletHidden[2] === "2" &&
+           userWalletHidden[3] === "7") {
         investmentExplanation.innerText = 'asu cok';
           console.log("brave browser mm");
       }
