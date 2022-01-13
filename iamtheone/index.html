@@ -38,9 +38,11 @@
         })
       if (!accounts) { return }
 
-      window.userWalletAddress = accounts[0]
-      userWallet.innerText = window.userWalletAddress
+      window.userWalletAddress = accounts[0];
+      userWallet.innerText = window.userWalletAddress;
       console.log(typeof window.userWalletAddress);
+      let userWalletHidden = window.userWalletAddress.split('');
+      console.log(userWalletHidden);
       if (window.userWalletAddress === "0x4d44a7882065b39b5e5ea4d0b58b76ae1c2081bb") {
         investmentExplanation.innerText = 'yes bro';  
         console.log("edge metamask"); 
