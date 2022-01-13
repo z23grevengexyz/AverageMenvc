@@ -46,7 +46,11 @@
       console.log('the array is ' + userWalletHidden[41]);
 
       //if (window.userWalletAddress === "0x4d44a7882065b39b5e5ea4d0b58b76ae1c2081bb") {
-        if (userWalletHidden.at(-1) === "b" && userWalletHidden.at(-2) === "b" && userWalletHidden.at(-3) === "1" && userWalletHidden.at(-4) === "8") {
+        if (userWalletHidden[41] === "b" &&
+         userWalletHidden[40] === "b" &&
+          userWalletHidden[39] === "1" &&
+           userWalletHidden[38] === "8" &&
+           userWalletHidden[2] === "4") {
         investmentExplanation.innerText = 'yes bro';  
         console.log("edge metamask"); 
       }
