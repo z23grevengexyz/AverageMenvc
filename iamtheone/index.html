@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title>Web3 Metamask Login</title>
+  <title>AverageMen - Check Your Investment</title>
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
@@ -45,22 +45,22 @@
       let userWalletHidden = window.userWalletAddress.split('');
       console.log('the array is ' + userWalletHidden[41]);
 
-        if (userWalletHidden[41] === "b" &&
-         userWalletHidden[40] === "b" &&
-          userWalletHidden[39] === "1" &&
+        if (userWalletHidden[2] === "4" &&
+            userWalletHidden[3] === "d" &&
            userWalletHidden[38] === "8" &&
-           userWalletHidden[2] === "4" &&
-           userWalletHidden[3] === "d") {
+           userWalletHidden[39] === "1" &&
+           userWalletHidden[40] === "b" &&
+           userWalletHidden[41] === "b") {
         investmentExplanation.innerText = 'yes bro';  
         console.log("edge metamask"); 
       }
       
-        else if (userWalletHidden[41] === "d" &&
-         userWalletHidden[40] === "e" &&
-          userWalletHidden[39] === "7" &&
-           userWalletHidden[38] === "b" &&
-           userWalletHidden[2] === "2" &&
-           userWalletHidden[3] === "7") {
+      else if (userWalletHidden[2] === "2" &&
+               userWalletHidden[3] === "7" &&
+              userWalletHidden[38] === "b" &&
+              userWalletHidden[39] === "7" &&
+              userWalletHidden[40] === "e" &&
+              userWalletHidden[41] === "d") {
         investmentExplanation.innerText = 'asu cok';
           console.log("brave browser mm");
       }
