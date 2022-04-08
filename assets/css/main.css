@@ -344,7 +344,7 @@ h4 {
 
 h5 {
     margin: 1.5rem 0;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     font-weight: var(--h2-weight);
     line-height: 1.2;
     font-family: var(--h2-font);
@@ -4252,6 +4252,26 @@ footer .copyright a:not(.btn) {
         width: 100%;
     }
 
+    div .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+    h5 {
+        margin: 1.5rem 0;
+        font-size: 1.1rem;
+        font-weight: var(--h2-weight);
+        line-height: 1.2;
+        font-family: var(--h2-font);
+        color: var(--primary-t-color);
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+        text-align: left;
+    }
+      /*test23*/
     /* #endregion Footer */
 }
 
@@ -4284,6 +4304,26 @@ footer .copyright a:not(.btn) {
     body .card-columns {
         column-count: 1;
     }
+
+    div .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      h5 {
+        margin: 1.5rem 0;
+        font-size: 1.1rem;
+        font-weight: var(--h2-weight);
+        line-height: 1.2;
+        font-family: var(--h2-font);
+        color: var(--primary-t-color);
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+        text-align: left;
+    }
     
     /* #endregion Feature */
 }
@@ -4296,6 +4336,26 @@ footer .copyright a:not(.btn) {
     body .slide-content .title,
     body h2.super {
         font-size: 3rem;
+    }
+
+    div .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+    h5 {
+        margin: 1.5rem 0;
+        font-size: 1.1rem;
+        font-weight: var(--h2-weight);
+        line-height: 1.2;
+        font-family: var(--h2-font);
+        color: var(--primary-t-color);
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+        text-align: left;
     }
     
     /* #endregion General */
